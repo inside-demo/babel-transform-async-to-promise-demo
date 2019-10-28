@@ -27,12 +27,12 @@ function _async(f) {
 }
 
 _async(function () {
-  console.log('step 1');
+  console.log('step 1', 'start');
   return _await(fetch('http://jsonplaceholder.typicode.com/posts/1'), function (response) {
-    console.log('step 2');
+    console.log('step 2', response);
     return _await(response.json(), function (json) {
-      console.log('step 3');
-      console.log(json);
+      console.log('step 3', json);
+      console.log('step 4', 'end');
     });
   });
 })();
