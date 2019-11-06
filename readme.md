@@ -1,4 +1,4 @@
-# babel-transform-async-to-promise-demo
+# babel transform async to promise
 
 ### Usage
 ```bash
